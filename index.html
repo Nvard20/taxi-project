@@ -102,41 +102,79 @@
                 </div>
             </div>
             <div class="main-phone">
-                <div class="phone">
-                    <div class="elipse">1</div>
+                <div class="phone" >
+                   <div class=" slider-step first-step step" id="step1box" data-next-step="step-mortgage-balance">
+                        <div class="elipse">1</div>
+                        <h5 class="title-form">Место назначения</h5>
+                            <div class="form-item">
+                                <p>Вид поездки</p>
+                                <select >
+                                    <option value="Выберите вид поездки">Выберите вид поездки</option>
+                                    <option value="Выберите вид поездки">Выберите вид поездки</option>
+                                    <option value="Выберите вид поездки">Выберите вид поездки</option>
+                                </select>
+                            </div>
+                            <div class="form-item">
+                                <p>Класс автомобиля</p>
+                                <select >
+                            
+                                    <option value="55">Выберите класс автомобиля</option>
+                                    <option value="BMW">BMW</option>
+                                    <option value="Audi">Audi</option>
+                                    <option value="Honda">Honda</option>
+                                </select>
+                            </div>
+                            <div class="form-item">
+                                <p>Место назначения</p>
+                                <select >
+                                    <option value="Выберите вид поездки">Место назначения</option>
+                                    <option value="Выберите">Выберите вид поездки</option>
+                                    <option value=" поездки">Выберите вид поездки</option>
+                                </select>
+                            </div>
+                            <div class="btn-item">
+                                <p>Осталось всего 2 шага, для оформления заказа самого безопасного такси!</p>
+                                <input type='button' value='Перейти к шагу 2' tabindex="2" class="btn-next btn yell" />
+                            </div>
+                    
+                   </div>
+                <div class=" slider-step step"  id="step2box" data-next-step="step-home-value" data-back-to="step1box">
+                    <div class="elipse">2</div>
                     <h5 class="title-form">Место назначения</h5>
-                    <form class="form">
-                        <div class="form-item">
-                            <p>Вид поездки</p>
-                            <select >
-                                <option value="Выберите вид поездки">Выберите вид поездки</option>
-                                <option value="Выберите вид поездки">Выберите вид поездки</option>
-                                <option value="Выберите вид поездки">Выберите вид поездки</option>
-                            </select>
+                      
+                        <div class="form-item" >
+                            <p>Ваше имя</p>
+                            <input type="text" placeholder="Введите ваше имя">
                         </div>
-                        <div class="form-item">
-                            <p>Класс автомобиля</p>
-                            <select >
-                        
-                                <option value="55">Выберите класс автомобиля</option>
-                                <option value="BMW">BMW</option>
-                                <option value="Audi">Audi</option>
-                                <option value="Honda">Honda</option>
-                            </select>
+                           
+                        <div class="form-item" >
+                            <p>Номер Вашего телефона</p>
+                            <input type="text" placeholder="+ 7 (___) ___-__-__">
                         </div>
-                        <div class="form-item">
-                            <p>Место назначения</p>
-                            <select >
-                                <option value="Выберите вид поездки">Место назначения</option>
-                                <option value="Выберите вид поездки">Выберите вид поездки</option>
-                                <option value="Выберите вид поездки">Выберите вид поездки</option>
-                            </select>
+                        <div class="form-item " >
+                            <p>Дата и время подачи авто</p>
+                            <div class="form-data ">
+                                <input type="date" placeholder="Дата подачи авто">
+                                <input type="text" placeholder="Время">
+                            </div>
+                          
                         </div>
-                        <div class="btn-item">
-                            <p>Осталось всего 2 шага, для оформления заказа самого безопасного такси!</p>
-                            <button class="btn yell">Перейти к шагу 2</button>
+                        <div class="form-item" >
+                            <p>Номер рейса</p>
+                            <input type="text" placeholder="Введите номер рейса">
                         </div>
-                    </form>
+                        <p class="mntext">Стоимость Вашей поездки составляет: 1580 ₽ </p>
+
+                        <div class="btn-item nextbtn">
+                            <p>Остался всего 1 шаг, для оформления заказа самого безопасного такси!</p>
+                            <a class="btn-back btn outline">back</a>
+
+                            <input type='button' value='Перейти к шагу 3'  class="btn-next btn yell" />
+
+
+                        </div>
+                    
+                   </div> 
                 </div>
             </div>
 

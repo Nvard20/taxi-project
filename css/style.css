@@ -297,7 +297,7 @@ align-items: center;
 justify-content: center;
 }
 .phone{
-    max-width: 260px;
+    max-width: 280px;
     margin: auto;
     margin-top: 50px;
 
@@ -336,6 +336,7 @@ font-size: 12px;
 line-height: 15px;
 background: url(../image/play.png) no-repeat right;
 -webkit-appearance: none;
+height: 20px;
 
 color: #828282;
 border: none;
@@ -425,5 +426,90 @@ color: #828282;
             padding-bottom: 25px;
         }
  }
- 
- 
+ .phone{
+     height: 592px;
+     overflow: hidden;
+ }
+
+ .first-step{
+     display: block;
+ }
+ [data-anim="show-from--right"]{
+   
+    display: block;
+
+  }
+  [data-anim="show-from--left"]{
+
+    display: block;
+
+  }
+  [data-anim="hide-to--right"]{
+   
+    display: none;
+
+  }
+  [data-anim="hide-to--left"]{
+
+    display: none;
+
+  }
+
+  .form-item > input{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;    
+    color: #828282;
+    height: 20px;
+    width: 97%;
+    border: none;
+    outline: none;
+  }
+  .form-data{
+      display: flex;
+      align-items: center;
+        justify-content: space-between;
+    
+    }
+    .form-data > input{
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;    
+        color: #828282;
+        height: 20px;
+        width: 49%;
+        border: none;
+        outline: none;
+    }
+.mntext{
+    font-family: Inter;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 132.02%;
+/* identical to box height, or 16px */
+
+
+color: #353535;
+}
+.nextbtn{
+    margin-top: 25px;
+
+}
+.outline{
+    margin: auto;
+    margin-top: 4px;
+    background: transparent;
+    border-color: #fecc2d;
+    border: 2px solid #fecc2d;
+    color: #fecc2d;
+    height: 40px;
+
+}
+.btn-back{
+    cursor: pointer;
+}
