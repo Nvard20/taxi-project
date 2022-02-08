@@ -826,3 +826,111 @@ margin-right: 21px;
 
     }
 }
+.cars-box{
+    width: 230px;
+height: 270px;
+background: #FFFFFF;
+box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+border-radius: 10px;
+padding: 15px 0;
+margin: auto;
+
+}
+.cars-box > h5{
+    font-family: Inter;
+font-style: normal;
+font-weight: 900;
+font-size: 16px;
+line-height: 19px;
+
+color: #353535;
+margin-bottom: 10px;
+text-align: center;
+margin-top: 10px;
+
+}
+
+
+.car-img{
+    width: 230px;
+    height: 190px;
+}
+.car-img > img{
+    width: 100%;
+    height: 100%;
+}
+.cars-box > h6{
+    text-align: center;
+
+font-family: Inter;
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+
+color: #353535;
+margin-bottom: 10px;
+}
+.cars-box > p{
+    
+font-family: Inter;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 115.2%;
+/* or 14px */
+
+text-align: center;
+
+color: #828282;
+width: 200px;
+margin: auto;
+}
+
+.myslider{
+    margin: 80px auto;
+    padding-bottom: 50px;
+    padding-top: 10px;
+    max-width: 1270px;
+
+}
+.swiper-pagination-total{
+    
+font-family: Inter;
+font-style: normal;
+font-size: 16px;
+line-height: 19px;
+}
+
+.swiper-pagination-current{
+    font-weight: 900;
+    font-family: Inter;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+.pagination{
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 140px;
+    margin: 0px auto;
+    margin-top: 30px;
+
+}
+.number-page{
+    display: none;
+}
+@media (max-width:1000px){
+    .number-page{
+        display: block;
+        bottom: 60px !important;
+        z-index: -1;
+
+    }
+    .pagination{
+        display: flex;
+    }
+}
