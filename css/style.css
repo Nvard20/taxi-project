@@ -683,3 +683,146 @@ margin-top: 10px;
         left: -50px;
      }
  }
+ .tarif-container > h2{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 61px;
+    color: #353535;
+    text-align: center;
+ }
+ .tarif-container > p{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    
+    
+    color: #828282;
+    text-align: center;    
+ }
+ .tarif-container{
+     max-width: 1370px;
+     margin: auto;
+ }
+ .table > thead{
+    background: #151515;
+
+ }
+ .table th{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    padding: 31px 25px;
+
+    text-align: left;
+
+    color: #FFFFFF;
+ }
+ .table{
+     border-collapse: collapse;
+     max-width: 1170px;
+     margin:50px auto;
+    width:100%;
+ }
+.table-conatiner{
+    overflow-x: auto;
+}
+ .table td{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;    
+    color: #151515;
+    padding: 21px 25px;
+ }  
+ .table > tbody >  tr{
+    background: #F7F7F7;
+
+ }
+ .table > tbody tr:nth-child(2n){
+     background-color: white;
+ }
+ .table-btn{
+    display: flex;
+    justify-content: center;
+ }
+ .table-btn > a{
+     background-color: #fecc2d;
+     color: white;
+ }
+ @media (max-width:600px){
+    .tarif-container > h2{
+        font-size: 30px;
+    }
+    .sections{
+        margin: 30px auto;
+
+    }
+ }
+ .tax-classes{
+    background: #161616;
+    padding: 10px 0;
+    margin: 30px 0;
+ }
+ .inner-classes{
+     margin: 80px auto;
+ }
+ .inner-classes > h2{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 115.2%;    
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 50px;
+ }
+.txt-class > p{
+    font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 115.42%;
+/* or 14px */
+
+
+color: #FFFFFF;
+margin-bottom: 20px;
+display: flex;
+}
+.txt-class> p > span{
+    
+font-family: Inter;
+font-style: normal;
+font-weight: 900;
+font-size: 16px;
+line-height: 19px;
+
+color: #FFFFFF;
+margin-right: 21px;
+}
+.txt-class{
+    max-width: 1020px;
+    margin: auto;
+}
+@media (max-width:1100px){
+    .inner-classes {
+        margin: 80px 20px;
+    }
+}
+@media (max-width:600px){
+    .inner-classes > h2{
+        font-size: 25px;
+
+    }
+}
