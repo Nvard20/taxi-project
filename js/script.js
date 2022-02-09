@@ -62,3 +62,9 @@ $(document).ready(function(){
        
   }
 });
+new Swiper(".myrewies", {
+  navigation: {
+    nextEl: ".next",
+    prevEl: ".prev",
+  },
+});
