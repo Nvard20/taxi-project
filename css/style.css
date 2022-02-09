@@ -1048,6 +1048,7 @@ border-radius: 10px;
 max-width: 352px;
 padding: 30px 25px;
 max-width: 302px;
+margin: auto;
 
 }
 .hd-name{
@@ -1108,7 +1109,7 @@ margin-top: 15px;
 .reviews{
     display: flex;
     justify-content: space-between;
-    align-items: start;
+    align-items: center;
 }
 .revs-image{
     max-width: 590px;
@@ -1142,4 +1143,62 @@ margin-top: 15px;
     right: 0;
     top: 130px;
 
+}
+@media (max-width:1400px){
+    .revs-content{
+        margin: 0 15px;
+
+    }
+}
+@media (max-width:1100px){
+  .reviews-box{
+      flex-direction: column;
+      align-items: start;
+  }
+  .revs-item{
+    margin-bottom: 20px;
+
+  }
+  
+  .rev-inner {
+    width: 100%;
+    max-width: 430px;
+    position: relative;
+}
+}
+@media (max-width:767px){
+    .reviews{
+        flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    .rev-controls{
+        width: 110px;
+        position: absolute;
+        right: 38%;
+        bottom: -25px;
+        top: unset;
+    }
+}
+@media (max-width:600px){
+    .rev-inner > h2{
+        font-size: 30px;
+    text-align: center;
+    }
+    .rev-inner > p{
+        text-align: center;
+    }
+    .reviews-container {
+        margin: 40px auto;
+    }
+}
+@media (max-width:400px){
+    .revs-item{
+        box-shadow: 0px 3px 10px rgb(0 0 0 / 15%);
+    }
+    .rev-controls{
+        right: 32%;
+        bottom: -10px;
+
+    }
 }
