@@ -68,3 +68,23 @@ new Swiper(".myrewies", {
     prevEl: ".prev",
   },
 });
+var btn = true;
+  
+    $('.faq__btn').click(function(){
+      btn =!btn;
+      if(!btn){
+        $(this).parents().children('.faq__subblock').addClass('faq__item--opened');
+        $(this).css({'backgroundColor':'#19446A','color':'white'});
+        $(this).find('img').attr('src','../image/play-up.png');
+      }else{
+        $(this).parents().children('.faq__subblock').removeClass('faq__item--opened');
+        $(this).css({'backgroundColor':'transparent','color':'black'});
+        $(this).find('img').attr('src','../image/play-arr.png');
+
+      }
+ 
+    })
+
+  
+
+
