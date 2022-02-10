@@ -1,6 +1,9 @@
 $('.burger').click(function(){
     $('.mob-content').slideToggle()
 });
+$('.menu-link').click(function(){
+    $('.mob-content').hide();
+});
 ////
 $(document).ready(function(){
  
@@ -75,16 +78,20 @@ var btn = true;
       if(!btn){
         $(this).parents().children('.faq__subblock').addClass('faq__item--opened');
         $(this).css({'backgroundColor':'#19446A','color':'white'});
-        $(this).find('img').attr('src','../image/play-up.png');
+        $(this).find('img').attr('src','./image/play-up.png');
       }else{
         $(this).parents().children('.faq__subblock').removeClass('faq__item--opened');
         $(this).css({'backgroundColor':'transparent','color':'black'});
-        $(this).find('img').attr('src','../image/play-arr.png');
+        $(this).find('img').attr('src','./image/play-arr.png');
 
       }
  
     })
-
-  
+  $(document).ready(function() {
+  $("a.menu-link").click(function(event) {
+      event.preventDefault();
+      $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 700);
+  });
+});  
 
 
