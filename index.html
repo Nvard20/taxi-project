@@ -7,6 +7,7 @@
     <meta property="og:title" content="Colby Fayock - A UX Designer &amp; Front-end Developer Blog" />
     <meta property="og:type" content="website" /> <meta property="og:image" content="/static/website-social-card-44070c4a901df708aa1563ac4bbe595a.jpg" /> 
     <meta property="og:url" content="https://www.colbyfayock.com" />
+
     <link
     rel="stylesheet"
     href="https://unpkg.com/swiper/swiper-bundle.min.css"
@@ -41,7 +42,7 @@
             </div>
             <a href="#" class="logo"><img src="image/logo.png" alt=""></a>
             <div class="call-settings">
-                <a href="#" class="btn">Заказать звонок</a>
+                <a href="#" class="btn" id="mybtn2">Заказать звонок</a>
                 <div class="number-text">
                     <p>бесплатно, круглосуточно</p>
                     <p class="number">+7 978 777 72 72</p>
@@ -502,7 +503,7 @@
                 </div>
             </div>
           </div>
-          <a href="#" class="btn yell vbn">Заказать такси</a>
+          <a href="javascript:void(0)" class="btn yell vbn" id="mybtn">Заказать такси</a>
     </div>
     <div class="queestions-container">
         <div class="quest">
@@ -691,7 +692,51 @@
             </div>
         </div>
     </footer>
+    <div id="myModal" class="modal close" >
 
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="tax-content-box">
+                <h2>Вы заказали такси!</h2>
+                <p>Ваша заявка принята, 
+                    скоро Вам перезвонит наш оператор</p>
+                    <a href="index.html" class="btn yell">Вернутся на сайт</a>
+            </div>
+          </div>
+      
+      </div>
+      <div id="myModal2" class="modal close" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="tax-content-box modalcall">
+                <h2>Заказать звонок</h2>
+                <p>Заполните форму, 
+                    и мы перезвоним вам через 1 минуту!</p>
+                    <form action="" class="fm">
+                        <div class="fm-item form-item">
+                            <input type="text" placeholder="Введите Ваше имя">
+                        </div>
+                        <div class="fm-item form-item">
+                            <input type="text" placeholder="Введите Ваш телефон">
+                        </div>
+                        <a href="#" class="btn yell addcall">Заказать звонок</a>
+
+                    </form>
+
+            </div>
+            <div class="tax-content-box boxcont-2">
+                <h2>Заказать звонок</h2>
+                <p>Заполните форму, 
+                    и мы перезвоним вам через 1 минуту!</p>
+                  
+                <a href="index.html" class="btn yell">Вернутся на сайт</a>
+
+
+            </div>
+          </div>
+      
+      </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="select-picker-master/dist/picker.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
