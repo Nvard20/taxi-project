@@ -27,33 +27,33 @@ $(document).ready(function(){
 
  });
 
-   var swiper = new Swiper(".mySwiper", {
+   var swiper = new Swiper(".myslider", {
      loop:true,
-     slidesPerView:1,
      spaceBetween: 0,
-     freeMode: false,
+     slidesPerView: 1,
 
      pagination: {
        el: ".swiper-pagination",
        type: "fraction",
+
      },
      navigation: {
        nextEl: ".button-prev",
        prevEl: ".button-next",
      },
      breakpoints: {
-      600: {
-        slidesPerView: 1,
-        spaceBetween: 0,
+    //   499: {
+    //     slidesPerView: 2,
+    //     spaceBetween: 100,
 
-    },
-      768: {
-        slidesPerView: 3,
-        spaceBetween: 0,
+    // },
+    //   768: {
+    //     slidesPerView: 1,
+    //     spaceBetween: 0,
 
-    },
+    // },
       1000: {
-          slidesPerView: 4,
+          slidesPerView: 3,
           spaceBetween: 0,
 
       },
@@ -65,7 +65,9 @@ $(document).ready(function(){
        
   }
 });
-new Swiper(".myrewies", {
+var s = new Swiper(".myrewies", {
+  loop:true,
+
   navigation: {
     nextEl: ".next",
     prevEl: ".prev",
@@ -93,5 +95,21 @@ var btn = true;
       $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 700);
   });
 });  
+/////
 
 
+$('.check').click(function(){
+  $('.more-info').toggle();
+});
+
+$(document).ready(function(){
+  $('#telephone').inputmask('+ 7 (999)-999-99-99',{placeholder:''})
+});
+$(document).ready(function () {
+   
+  $('#ex-search').picker({search : true},);
+  $('#ex-search-2').picker({search : true});
+  $('#ex-search-3').picker({search : true});
+  $('#ex-search-4').picker({search : true});
+
+});

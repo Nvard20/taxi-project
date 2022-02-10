@@ -11,7 +11,10 @@
     rel="stylesheet"
     href="https://unpkg.com/swiper/swiper-bundle.min.css"
   />
+  <link rel="stylesheet" href="select-picker-master/dist/picker.min.css">
+
     <link rel="stylesheet" href="css/style.css">
+
     <title>Document</title>
 </head>
 <body>
@@ -112,29 +115,43 @@
                         <h5 class="title-form">Место назначения</h5>
                             <div class="form-item">
                                 <p>Вид поездки</p>
-                                <select >
-                                    <option value="Выберите вид поездки">Выберите вид поездки</option>
-                                    <option value="Выберите вид поездки">Выберите вид поездки</option>
-                                    <option value="Выберите вид поездки">Выберите вид поездки</option>
-                                </select>
+                                <select name="basic" id="ex-search"> 
+                                    <option value="">Вид поездки</option>
+                                    <option value="Аеропорт">Аеропорт</option> 
+                                    <option value="Жд вокзал" class="beta">Жд вокзал</option>
+                                    <option value="Межгород">Межгород</option>
+                             </select>
+                           
                             </div>
                             <div class="form-item">
                                 <p>Класс автомобиля</p>
-                                <select >
-                            
-                                    <option value="55">Выберите класс автомобиля</option>
-                                    <option value="BMW">BMW</option>
-                                    <option value="Audi">Audi</option>
-                                    <option value="Honda">Honda</option>
-                                </select>
+                                <select  id="ex-search-2"> 
+                                    <option value="">Место назначения</option>
+                                    <option value="alpha">alpha</option> 
+                                    <option value="beta">beta</option>
+                                    <option value="theta">theta</option>
+                                    <option value="omega">omega</option>
+                             </select>
                             </div>
                             <div class="form-item">
                                 <p>Место назначения</p>
-                                <select >
-                                    <option value="Выберите вид поездки">Место назначения</option>
-                                    <option value="Выберите">Выберите вид поездки</option>
-                                    <option value=" поездки">Выберите вид поездки</option>
-                                </select>
+                                <select name="basic" id="ex-search-3"> 
+                                    <option value="">Место назначения</option>
+                                    <option value="alpha">alpha</option> 
+                                    <option value="beta">beta</option>
+                                    <option value="theta">theta</option>
+                                    <option value="omega">omega</option>
+                             </select>
+                            </div>
+                            <div class="form-item fm-4">
+                                <p>Место отправления</p>
+                                <select name="basic" id="ex-search-4"> 
+                                    <option value="">Выберите или выберите название</option>
+                                    <option value="al">askdasd</option> 
+                                    <option value="be">saasdasa</option>
+                                    <option value="th">asdas</option>
+                                    <option value="om">aaa</option>
+                             </select>
                             </div>
                             <div class="btn-item">
                                 <p>Осталось всего 2 шага, для оформления заказа самого безопасного такси!</p>
@@ -153,13 +170,13 @@
                            
                         <div class="form-item" >
                             <p>Номер Вашего телефона</p>
-                            <input type="text" placeholder="+ 7 (___) ___-__-__">
-                        </div>
+                            <input type="text" id="telephone" name="phone" value="" placeholder="+ 7 (999)-999-99-99">         
+                                       </div>
                         <div class="form-item " >
                             <p>Дата и время подачи авто</p>
                             <div class="form-data ">
                                 <input type="date" placeholder="Дата подачи авто">
-                                <input type="text" placeholder="Время">
+                                <input type="time" placeholder="Время">
                             </div>
                           
                         </div>
@@ -171,7 +188,7 @@
 
                         <div class="btn-item nextbtn">
                             <p>Остался всего 1 шаг, для оформления заказа самого безопасного такси!</p>
-                            <a class="btn-back btn outline">Вернутся у шагу 2</a>
+                            <a class="btn-back btn outline">Вернутся к шагу 2</a>
 
                             <input type='button' value='Перейти к шагу 3'  class="btn-next btn yell" />
 
@@ -197,62 +214,39 @@
                             <p>Кол-во младенцев (младше 1 года)</p>
                             <input type="text" placeholder="Колличество младенцев">
                         </div>
-                        <p class="mntext">Обратный трансфер  <span class="circle"></span></p>
+                        <div class="mntext">Обратный трансфер  
+                          <span class="round">
+                            <input type="checkbox"  id="checkbox" />
+                            <label for="checkbox" class="check"></label>
+                          </span>
+                        </div>
+                        <div class="more-info">
+                            <div class="form-item " >
+                                <p>Дата и время подачи авто</p>
+                                <div class="form-data ">
+                                    <input type="date" placeholder="Дата подачи авто">
+                                    <input type="time" placeholder="Время">
+                                </div>
+                              
+                            </div>
+                            <div class="form-item" >
+                                <p>Комментарий к заказу</p>
+                                <input type="text" placeholder="Ваши комментарии и пожелания">
+                            </div>
+                        </div>
                         <p class="mntext">Стоимость Вашей поездки составляет: 1580 ₽ </p>
 
                         <div class="btn-item btntop">
                             <p>Остался всего 1 шаг, для оформления заказа самого безопасного такси!</p>
-                            <a class="btn-back btn outline btn3">Вернутся у шагу 3</a>
+                            <a class="btn-back btn outline btn3">Вернутся к шагу 3</a>
 
-                            <input type='button' value='Заказать такси'  class="btn-next btn yell" />
-
-
-                        </div>
-                    
-                   </div> 
-                   <div class=" slider-step step"  id="step4box" data-next-step="step-home-nxd" data-back-to="step3box">
-                    <div class="elipse">3</div>
-                    <h5 class="title-form">Дополнительно</h5>
-                      
-                        <div class="form-item" >
-                            <p>Кол-во взрослых пассажиров</p>
-                            <input type="text" placeholder="Количество взрослых">
-                        </div>
-                           
-                        <div class="form-item" >
-                            <p>Кол-во детей (младше 12 лет)</p>
-                            <input type="text" placeholder="Количество детей">
-                        </div>
-                 
-                        <div class="form-item" >
-                            <p>Кол-во младенцев (младше 1 года)</p>
-                            <input type="text" placeholder="Колличество младенцев">
-                        </div>
-                        <p class="mntext">Обратный трансфер  <span class="circle yell"></span></p>
-                        <div class="form-item " >
-                            <p>Дата и время подачи авто</p>
-                            <div class="form-data ">
-                                <input type="date" placeholder="Дата подачи авто">
-                                <input type="text" placeholder="Время">
-                            </div>
-                          
-                        </div>
-                        <div class="form-item" >
-                            <p>Комментарий к заказу</p>
-                            <input type="text" placeholder="Ваши комментарии и пожелания">
-                        </div>
-                        <p class="mntext">Стоимость Вашей поездки составляет: 1580 ₽ </p>
-
-                        <div class="btn-item nextbtn">
-                            <p>Остался всего 1 шаг, для оформления заказа самого безопасного такси!</p>
-                            <a class="btn-back btn outline btn3">Вернутся у шагу 3</a>
-
-                            <input type='button' value='Заказать такси'  class="btn yell" />
+                            <input type='button' value='Заказать такси'  class=" btn yell" />
 
 
                         </div>
                     
                    </div> 
+              
                 </div>
             </div>
 
@@ -508,6 +502,7 @@
                 </div>
             </div>
           </div>
+          <a href="#" class="btn yell vbn">Заказать такси</a>
     </div>
     <div class="queestions-container">
         <div class="quest">
@@ -696,8 +691,11 @@
             </div>
         </div>
     </footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="select-picker-master/dist/picker.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.7/jquery.inputmask.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
