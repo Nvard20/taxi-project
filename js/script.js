@@ -104,6 +104,8 @@ $('.check').click(function(){
 
 $(document).ready(function(){
   $('#telephone').inputmask('+ 7 (999)-999-99-99',{placeholder:''})
+  $('#tele_phone').inputmask('+ 7 (999)-999-99-99',{placeholder:''})
+
 });
 $(document).ready(function () {
    
@@ -116,53 +118,29 @@ $(document).ready(function () {
 var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
-var btn = document.getElementById("mybtn");
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-///
-var modal2 = document.getElementById("myModal2");
-
-// Get the button that opens the modal
-var btn2 = document.getElementById("mybtn2");
-
-// Get the <span> element that closes the modal
-var span2 = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn2.onclick = function() {
-  modal2.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span2.onclick = function() {
-  modal2.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal2.style.display = "none";
-  }
-}
 $('.addcall').click(function(){
   $('.modalcall').hide();
   $('.boxcont-2').show();
 })
+///////////
+$('.order-tel').click(function(){
+  $('#popup2').css({'visibility':'visible','opacity':'1'});
+});
+$('.order-taxi').click(function(){
+  $('#popup1').css({'visibility':'visible','opacity':'1'});
+})
+var modal = document.getElementById("popup2");
+var modal2 = document.getElementById("popup1");
+window.onclick = function(event) {
+  if (event.target == modal) {
+    $('#popup2').css({'visibility':'hidden','opacity':'0'});
+
+
+  }
+  else if (event.target == modal2) {
+       $('#popup1').css({'visibility':'hidden','opacity':'0'});
+    
+    
+      }
+}

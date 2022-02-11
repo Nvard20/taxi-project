@@ -1007,12 +1007,12 @@ margin-top: 8px;
 .quest-item{
     border-bottom: 2px solid #D2D2D2;
     max-width: 270px;
-    padding-bottom: 17px;
     width: 100%;
 
 }
 .quest-item > input{
     font-family: Inter;
+    height: 50px;
 font-style: normal;
 font-weight: 500;
 font-size: 12px;
@@ -1642,37 +1642,12 @@ color: #FFFFFF;
           margin-bottom: 0;
       }
   }
-  .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    z-index: 99999999999;
-
-  }
+ 
   
-  /* Modal Content */
-  .modal-content {
-    position: relative;
-    /* background-color: #fefefe; */
-    margin: auto;
-    padding: 0;
-    /* border: 1px solid #888; */
-    width: 80%;
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
-    animation-duration: 0.4s;
-    top: 90px;
 
-  }
+  .modal{
+    max-width: 260px !important;
+}
   .tax-content-box{
       max-width: 260px;
       background: #FFFFFF;
@@ -1708,39 +1683,7 @@ margin-top: 20px;
 
   }
   
-  /* Add Animation */
-  @-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0} 
-    to {top:0; opacity:1}
-  }
-  
-  @keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
-  }
-  
-  /* The Close Button */
-  .close {
-    color: white;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  .modal-header {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
-  }
-  
-  .modal-body {padding: 2px 16px;}
+
   
 .fm-item{
     border-bottom: 2px solid #D2D2D2;
@@ -1749,3 +1692,124 @@ margin-top: 20px;
 .boxcont-2{
     display: none;
 }
+.table > tbody{
+    max-height: 413px;
+    overflow-y: auto;
+    height: 100%;
+    display: block
+}
+td{
+    width: 10%;
+
+}
+tr > td:first-child{
+    width: 20%;
+
+}
+tr > th:first-child {
+    width: 20%;
+
+}
+th{
+    width: 12%;
+
+}
+tr{
+    display: flex;
+    justify-content: space-between;
+}
+thead{
+    position: sticky;
+    top: 0;
+}
+
+.boxss {
+    width: 40%;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.2);
+    padding: 35px;
+    border: 2px solid #fff;
+    border-radius: 20px/50px;
+    background-clip: padding-box;
+    text-align: center;
+  }
+  
+  .button {
+    font-size: 1em;
+    padding: 10px;
+    color: #fff;
+    border: 2px solid #06D85F;
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+  }
+  .button:hover {
+    background: #06D85F;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 500ms;
+    z-index: 99999999;
+
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+    z-index: 999999;
+
+  }
+  
+  .popup {
+    margin: 150px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {
+    color: #06D85F;
+  }
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
+  }
+  
+  @media screen and (max-width: 700px){
+    .boxss{
+      width: 70%;
+    }
+    .popup{
+      width: 70%;
+    }
+  }
+  .close-modal{
+    visibility: hidden;
+    opacity: 0;
+  }
