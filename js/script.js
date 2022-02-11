@@ -31,6 +31,7 @@ $(document).ready(function(){
      loop:true,
      spaceBetween: 0,
      slidesPerView: 1,
+     allowTouchMove:false,
 
      pagination: {
        el: ".swiper-pagination",
@@ -53,6 +54,7 @@ $(document).ready(function(){
 
     // },
       1000: {
+
           slidesPerView: 3,
           spaceBetween: 0,
 
@@ -67,7 +69,7 @@ $(document).ready(function(){
 });
 var s = new Swiper(".myrewies", {
   loop:true,
-
+  allowTouchMove:false,
   navigation: {
     nextEl: ".next",
     prevEl: ".prev",
