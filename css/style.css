@@ -386,6 +386,14 @@ color: #828282;
     margin: 15px auto;
     cursor: pointer;
 }
+.yell:hover{
+    background: #FFE184;
+    color: #353535;
+}
+.tellbtn:hover{
+    background: #FFE184;
+    color: #353535;
+}
 .btn-item {
     margin-top: 190px;
 
@@ -1812,4 +1820,8 @@ thead{
   .close-modal{
     visibility: hidden;
     opacity: 0;
+  }
+  .call-settings > a:hover{
+    background-color: #999999;
+    color: white;
   }

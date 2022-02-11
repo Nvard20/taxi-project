@@ -109,14 +109,7 @@ $(document).ready(function(){
   $('#tele_phone').inputmask('+ 7 (999)-999-99-99',{placeholder:''})
 
 });
-$(document).ready(function () {
-   
-  $('#ex-search').picker({search : true},);
-  $('#ex-search-2').picker({search : true});
-  $('#ex-search-3').picker({search : true});
-  $('#ex-search-4').picker({search : true});
 
-});
 var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
@@ -146,3 +139,29 @@ window.onclick = function(event) {
     
       }
 }
+///selectPicker
+
+$(document).ready(function () {
+   
+  $elem = $('#ex-search').picker({search : true},);
+  $('#ex-search-2').picker({search : true});
+  $('#ex-search-3').picker({search : true});
+  $('#ex-search-4').picker({search : true});
+ 
+  $elem.on('sp-change', function(){
+   //   $(this).data("data-id");
+   var val = $(this).val();
+    if(val === 'Жд вокзал'){
+      $('.fm-4').show();
+    }
+    if(val === "Аеропорт"){
+      $('.fm-4').hide();
+    }
+    if(val=== "Межгород"){
+      $('.fm-4').show();
+
+    }
+
+  });
+
+});
