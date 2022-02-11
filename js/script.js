@@ -154,13 +154,28 @@ $(document).ready(function () {
    var val = $(this).val();
     if(val === 'Жд вокзал'){
       $('.fm-4').show();
+      if(!$(".btn-item").hasClass('small-btn')){
+        $('.btn-item').addClass('small-btn');
+
+      }
+      $('.main-phone').removeClass('beetween');
+
     }
     if(val === "Аеропорт"){
       $('.fm-4').hide();
+      $('.btn-item').removeClass('small-btn');
+      $('.main-phone').removeClass('beetween');
+
     }
     if(val=== "Межгород"){
       $('.fm-4').show();
+      if(!$(".btn-item").hasClass('small-btn')){
+        $('.btn-item').addClass('small-btn');
 
+      }
+      if(!$('.main-phone').hasClass('beetween')){
+        $('.main-phone').addClass('beetween');
+      }
     }
 
   });

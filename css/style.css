@@ -87,7 +87,7 @@ color: #A3A3A3;
     color: #A3A3A3;
 
 }
-.number{
+.number,.number a{
     font-family: Inter;
     font-style: normal;
     font-weight: bold;
@@ -98,6 +98,7 @@ color: #A3A3A3;
     margin-top: 10px;
     text-align: right;
 }
+
 .logo > img{
     width: 241px;
 }
@@ -283,10 +284,7 @@ color: #FFFFFF;
     max-width: 350px;
     width: 100%;
 }
-/* .main-phone.big{
-background-image: url(../image/big.png);
-height: 800px;
-} */
+
 .elipse{
     width: 22px;
     height: 22px;
@@ -305,7 +303,7 @@ align-items: center;
 justify-content: center;
 }
 .phone{
-    max-width: 280px;
+    max-width: 285px;
     margin: auto;
     margin-top: 50px;
 
@@ -402,7 +400,18 @@ color: #828282;
     margin-top: 190px;
 
 }
-
+.btn-item.small-btn{
+    margin-top: 110px;
+}
+#step2box .small-btn{
+    margin-top: 21px;
+}
+.beetween .race-item{
+    display: none;
+}
+.beetween #step2box .small-btn {
+    margin-top: 100px;
+}
 @media (max-width:1400px){
     .main-container{
         margin: auto 13px;
@@ -459,6 +468,8 @@ color: #828282;
         }
         .main-text > p{
             padding-bottom: 25px;
+            text-align: center;
+
         }
  }
  .phone{
@@ -1577,6 +1588,12 @@ color: #FFFFFF;
     border: none !important;
 
 }
+.picker .pc-select {
+    position: relative;
+    display: inline-block;
+    min-width: 165px;
+    max-width: 175px !important;
+}
 .picker .pc-select .pc-list li {
     display: block;
     list-style: none;
@@ -1678,7 +1695,7 @@ font-weight: 500;
 font-size: 12px;
 line-height: 120.7%;
 /* or 14px */
-
+    margin-bottom: 20px;
 text-align: center;
 
 color: #828282;
@@ -1829,7 +1846,7 @@ thead{
     color: #A3A3A3;
     margin-bottom: 8px;
     min-width: 200px;
-
+    text-align: center;
 }
   #step3box::-webkit-scrollbar, .table > tbody::-webkit-scrollbar{
     width: 5px;
