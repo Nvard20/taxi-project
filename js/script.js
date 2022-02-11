@@ -101,7 +101,8 @@ var btn = true;
 
 
 $('.check').click(function(){
-  $('.more-info').toggle();
+  
+ $('.more-info').toggle();
 });
 
 $(document).ready(function(){
