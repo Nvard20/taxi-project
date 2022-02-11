@@ -332,19 +332,27 @@ line-height: 17px;
 color: #353535;
 margin-bottom: 15px;
 }
+.picker > .pc-select::after{
+    content: '';
+    background: url(../image/play.png) no-repeat right;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    z-index: 91;
+    right: 3px;
+}
 .picker{
     font-family: Inter;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 15px;
-    background: url(../image/play.png) no-repeat right;
     -webkit-appearance: none;
     height: 20px;
     
     color: #828282;
     border: none;
-    width: 100%;
+    width: 97%;
     outline: none;
 }
 /* }
@@ -397,7 +405,7 @@ color: #828282;
     color: #353535;
 }
 .btn-item {
-    margin-top: 190px;
+    margin-top: 187px;
 
 }
 .btn-item.small-btn{
@@ -581,7 +589,7 @@ margin-left: 8px;
 
 .pc-element{
     height: 20px !important;
-    padding: 0px 24px 0px 0px !important;
+    padding: 0px 0px 0px 0px !important;
 }
 
 
@@ -1564,16 +1572,19 @@ color: #FFFFFF;
 }
 .picker .pc-element, .picker .pc-trigger{
     border: none;
-    width: 130% !important;
+    width: 100% !important;
 
 }
 .pc-list{
-    width: 169% !important;
+    width: 100% !important;
     border: none !important;
 
 }
 .form-item > select{
     opacity: 0;
+}
+.picker .pc-select .pc-list{
+    z-index: 93;
 }
 .picker .pc-select .pc-list input[type=search] {
     width: 100%;
@@ -1592,7 +1603,8 @@ color: #FFFFFF;
     position: relative;
     display: inline-block;
     min-width: 165px;
-    max-width: 175px !important;
+    max-width: 280px !important;
+    width: 100%;
 }
 .picker .pc-select .pc-list li {
     display: block;
@@ -1847,6 +1859,25 @@ thead{
     margin-bottom: 8px;
     min-width: 200px;
     text-align: center;
+}
+@media (max-width:360px){
+    .phone {
+        max-width: 270px;
+       
+    }
+    .main-phone{
+        background-image: url(../image/phone_mob.png);
+        
+    }
+    .phone {
+        height: 600px;
+        overflow: hidden;
+    }
+
+}
+.picker .pc-select .pc-list ul{
+    overflow-y: auto;
+    max-height: 200px;
 }
   #step3box::-webkit-scrollbar, .table > tbody::-webkit-scrollbar{
     width: 5px;
